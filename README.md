@@ -1,4 +1,4 @@
-I’m Mohsin Ali, a passionate software engineer with over 2 years of experience in developing robust software solutions. Currently transitioning into the field of data science, I specialize in building machine learning models and data pipelines that transform complex datasets into actionable business insights.
+#  I’m Mohsin Ali, a passionate software engineer with over 2 years of experience in developing robust software solutions. Currently transitioning into the field of data science, I specialize in building machine learning models and data pipelines that transform complex datasets into actionable business insights.
 
 Throughout my career, I have honed my skills in various programming languages and technologies, including Python, JavaScript, and SQL. My engineering background allows me to bridge the gap between statistical analysis and production-grade implementations, ensuring that the solutions I create are not only effective but also scalable and maintainable.
 
