@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MyPortfolio</title>
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Google Fonts - Poppins -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   </head>
+   <body>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+         <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                  <li class="nav-item"><a class="nav-link" href="mohsinsahb53@gmail.com">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Hero Section -->
+      <section class="hero-section">
+         <div class="hero-content">
+            <!-- Name -->
+            <h1 class="hero-title hover-animate">Mohsin Ali</h1>
+            <!-- Description -->
+            <p class="hero-description">
+               <span class="title-block">Data Science Professional</span>
+               <span class="separator">|</span>
+               <span class="title-block">Machine Learning Engineer</span>
+             </p>
+             
+             <style>
+             :root {
+               --primary: #0f172a;         /* Modern slate-900 */
+               --secondary: #334155;       /* slate-700 */
+               --accent: #0ea5e9;          /* sky-500 */
+               --accent-2: #8b5cf6;        /* violet-500 */
+               --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+             }
+             
+             .hero-description {
+               font-size: 1.75rem;
+               color: var(--primary);
+               display: flex;
+               align-items: center;
+               gap: 1.5rem;
+               padding: 2rem;
+               background: var(--bg-gradient);
+               border-radius: 1rem;
+               box-shadow: 0 8px 32px rgba(15, 23, 42, 0.05);
+               border: 1px solid rgba(241, 245, 249, 0.15);
+               backdrop-filter: blur(12px);
+             }
+             
+             .title-block {
+               padding: 0.8rem 1.5rem;
+               border-radius: 0.5rem;
+               transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+               position: relative;
+               background: transparent;
+               cursor: pointer;
+             }
+             
+             .title-block:hover {
+               background: rgba(14, 165, 233, 0.08);
+               transform: translateY(-2px);
+             }
+             
+             /* Modern gradient underline animation */
+             .title-block::after {
+               content: '';
+               position: absolute;
+               bottom: -4px;
+               left: 0;
+               width: 0;
+               height: 2px;
+               background: linear-gradient(90deg, var(--accent), var(--accent-2));
+               transition: width 0.4s ease;
+             }
+             
+             .title-block:hover::after {
+               width: 100%;
+             }
+             
+             /* Contemporary separator design */
+             .separator {
+               color: #cbd5e1;
+               font-weight: 300;
+               position: relative;
+               top: -1px;
+               opacity: 0.7;
+             }
+             
+             /* Subtle parallax effect on hover */
+             @media (hover: hover) {
+               .hero-description:hover .title-block:not(:hover) {
+                 transform: translateY(1px);
+                 opacity: 0.9;
+               }
+             }
+             
+             /* Modern state transitions */
+             .title-block {
+               will-change: transform, background;
+             }
+             </style>
+            
+            <!-- Call-to-Action Buttons -->
+            <div class="hero-buttons">
+               <a href="mailto:mohsinsahb53@gmail.com?subject=Job%20Opportunity&body=Hello%20Mohsin,%0A%0AWe%20would%20like%20to%20discuss..." 
+                  class="btn btn-primary">Hire Me</a>
+               <a href="https://www.linkedin.com/in/mohsin-ali-528963324/" 
+                  class="btn btn-secondary">View Portfolio</a>
+           </div>
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+               <a href="https://www.linkedin.com/in/mohsin-ali-528963324" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+               <a href="https://github.com/MohsinAli08000" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+               <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+         </div>
+      </section>
+      <!-- About Me Section -->
+      <section class="about-section">
+         <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <<div class="about-content">
+               <!-- Profile Image -->
+               <div class="profile-card">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFP1AOXYPxCi7LHK7y8_bfIDKc5BisUvDeOg&s" alt="Profile Image" class="profile-image">
+               </div>
+               <!-- About Me Text -->
+               <div class="about-text">
+                   <p>
+                     Hi, I'm Mohsin Ali, a software engineer transitioning into data science with over 2 years of experience in developing robust software solutions. I specialize in building machine learning models and data pipelines that transform complex datasets into actionable business insights. My engineering background enables me to bridge the gap between statistical analysis and production-grade implementations, ensuring scalable and maintainable data solutions.
+                   </p>
+               </div>
+           </div>
+               <!-- Glassmorphic Info Cards -->
+               <div class="info-cards">
+                  <div class="info-card">
+                     <i class="fas fa-user"></i>
+                     <h3>Name</h3>
+                     <p>Mohsin Ali</p>
+                  </div>
+                  <div class="info-card" onclick="window.location.href='mailto:mohsinsahb53@gmail.com';" style="cursor: pointer;">
+    <i class="fas fa-envelope"></i>
+    <h3>Email</h3>
+    <p>mohsinsahb53@gmail.com</p>
+</div>
+</a>
+                  <div class="info-card">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <h3>Location</h3>
+                     <p>Pakistan , Sindh</p>
+                  </div>
+                  <a href="https://www.linkedin.com/in/mohsin-ali-528963324/" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                        class="info-card-link">
+                   <div class="info-card">
+                     <i class="fas fa-briefcase"></i>
+                     <h3>Freelance</h3>
+                      <p>Available</p>
+                  </div>
+</a>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      
+      <!-- Skills Section -->
+      <section class="skills-section">
+         <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <!-- Skill Categories -->
+            <div class="skill-categories">
+               <!-- Web Development -->
+               <div class="skill-category">
+                  <div class="skills-grid">
+                     <div class="skill-card">
+                        <div class="circular-progress" data-progress="90">
+                           <span class="progress-value">90%</span>
+                        </div>
+                        <h4>Python</h4>
+                     </div>
+                     <div class="skill-card">
+                        <div class="circular-progress" data-progress="85">
+                           <span class="progress-value">85%</span>
+                        </div>
+                        <h4>Machine Learning</h4>
+                     </div>
+                     <div class="skill-card">
+                        <div class="circular-progress" data-progress="85">
+                           <span class="progress-value">95%</span>
+                        </div>
+                        <h4>Power BI</h4>
+                     </div>
+                     <div class="skill-card">
+                        <div class="circular-progress" data-progress="80">
+                           <span class="progress-value">80%</span>
+                        </div>
+                        <h4>Tableu</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Projects Section -->
+      <section class="projects-section">
+         <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <!-- Category Filters -->
+            <div class="filters">
+               <button class="filter-btn active" data-filter="all">All</button>
+               <button class="filter-btn" data-filter="ml">Machine Learning</button>
+               <button class="filter-btn" data-filter="analysis">Data Analysis</button>
+               <button class="filter-btn" data-filter="bigdata">Big Data</button>
+               <button class="filter-btn" data-filter="visualization">Visualization</button>
+           </div>
+            <!-- Project Cards -->
+            <div class="projects-grid">
+               <!-- Project 1 - Machine Learning -->
+               <div class="project-card" data-category="ml">
+                   <div class="project-card" data-category="ml">
+                     <div class="project-image">
+                         <img src="images/project.png" 
+                              alt="Customer Churn Prediction Dashboard"
+                              class="project-img">
+                     </div>
+                     <div class="project-content">
+                         <h3 class="project-title">Customer Churn Prediction</h3>
+                         <p class="project-description">
+                             Machine learning model achieving 89% accuracy using XGBoost and feature engineering,
+                             reducing customer attrition by 25% for telecom company.
+                         </p>
+                         <a href="https://github.com/MohsinAli08000/Customer-Churn-Prediction" 
+                            class="project-link" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
+                            View Analysis
+                         </a>
+                     </div>
+                 </div>
+               </div>
+           
+               <!-- Project 2 - Data Analysis -->
+               <div class="project-card" data-category="ml">
+                  <div class="project-image">
+                      <img src="images/fakenews.png" 
+                           alt="Fake News Detection Dashboard"
+                           class="project-img">
+                  </div>
+                  <div class="project-content">
+                      <h3 class="project-title">Fake News Detection</h3>
+                      <p class="project-description">
+                          NLP-based classification system using BERT and TF-IDF, achieving 92% accuracy
+                          in identifying misleading articles across multiple news categories.
+                      </p>
+                      <a href="https://github.com/MohsinAli08000/Fake-News-Detection" 
+                         class="project-link" 
+                         target="_blank" 
+                         rel="noopener noreferrer">
+                         View Project
+                      </a>
+                  </div>
+              </div>
+           
+               <!-- Project 3 - Big Data -->
+               <div class="project-card" data-category="ml">
+                  <div class="project-image">
+                      <img src="images/uber.png" 
+                           alt="Uber Fares Prediction Dashboard"
+                           class="project-img">
+                  </div>
+                  <div class="project-content">
+                      <h3 class="project-title">Uber Fares Prediction</h3>
+                      <p class="project-description">
+                          PyTorch-based fare estimation system with Multi-GPU training, 
+                          achieving 95% accuracy in predicting ride costs using time-series
+                          and geospatial features.
+                      </p>
+                      <a href="https://github.com/MohsinAli08000/Uber-Fares-Prediction-PyTorch-Multi-GPU" 
+                         class="project-link" 
+                         target="_blank" 
+                         rel="noopener noreferrer">
+                         View Repository
+                      </a>
+                  </div>
+              </div>
+           
+               <!-- Project 4 - NLP -->
+               <div class="project-card" data-category="analysis">
+                  <div class="project-image">
+                      <img src="images/housesales.png" 
+                           alt="House Sales Analysis Dashboard"
+                           class="project-img">
+                  </div>
+                  <div class="project-content">
+                      <h3 class="project-title">King County House Sales Analysis</h3>
+                      <p class="project-description">
+                          Comprehensive real estate analysis using Python and Pandas, identifying key price drivers
+                          and market trends across 21,000+ property sales with 95% correlation accuracy.
+                      </p>
+                      <a href="https://github.com/MohsinAli08000/house-sales-in-king-country-usa-" 
+                         class="project-link" 
+                         target="_blank" 
+                         rel="noopener noreferrer">
+                         View Analysis
+                      </a>
+                  </div>
+              </div>
+           
+               <!-- Project 5 - Business Intelligence -->
+               <div class="project-card" data-category="bi">
+                  <div class="project-image">
+                      <img src="images/salarydashboard.png" 
+                           alt="Data Science Salary Dashboard"
+                           class="project-img">
+                  </div>
+                  <div class="project-content">
+                      <h3 class="project-title">Data Science Salary Dashboard</h3>
+                      <p class="project-description">
+                          Tableau-powered analytics dashboard tracking global DS salary trends,
+                          analyzing 10,000+ entries with interactive visualizations of compensation
+                          patterns by experience, location, and technology stack.
+                      </p>
+                      <a href="https://github.com/MohsinAli08000/Data-Science-Salary-Dashboard-Tableau/blob/main/ds.twb" 
+                         class="project-link" 
+                         target="_blank" 
+                         rel="noopener noreferrer">
+                         View Dashboard
+                      </a>
+                  </div>
+              </div>
+           </div>
+         </div>
+      </section>
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+         <span class="close">&times;</span>
+         <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Lightbox Image">
+            <div class="lightbox-text">
+               <h3 id="lightbox-title"></h3>
+               <p id="lightbox-description"></p>
+               <a id="lightbox-link" href="#" target="_blank">Live Demo</a>
+            </div>
+         </div>
+      </div>
+      <!-- Contact Section -->
+      <section class="contact-section">
+         <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+               <!-- Contact Form -->
+               <div class="contact-form">
+                  <form>
+                     <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                     </div>
+                     <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                     </div>
+                     <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                     </div>
+                     <button type="submit" class="submit-btn">Send Message</button>
+                  </form>
+               </div>
+               <!-- Contact Info Cards -->
+               <div class="contact-info">
+                  <div class="info-card">
+                     <i class="fas fa-envelope"></i>
+                     <h3>Email</h3>
+                     <p>mohsinsahb53@gmail.com</p>
+                  </div>
+                  <div class="info-card">
+                     <i class="fas fa-phone"></i>
+                     <h3>Phone</h3>
+                     <p>+92 3072908000</p>
+                  </div>
+                  <div class="info-card">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <h3>Location</h3>
+                     <p>Pakistan, Sindh</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      
+     
+     <style>
+     .projects-section {
+         padding: 4rem 0;
+         background: #f8f9fa;
+     }
+     
+     .container {
+         max-width: 1200px;
+         margin: 0 auto;
+         padding: 0 1.5rem;
+     }
+     
+     .section-title {
+         text-align: center;
+         font-size: 2.5rem;
+         margin-bottom: 3rem;
+         color: #2d3436;
+     }
+     
+     .projects-grid {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+         gap: 2rem;
+     }
+     
+     .project-card {
+         background: white;
+         border-radius: 10px;
+         overflow: hidden;
+         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+         transition: transform 0.3s ease;
+     }
+     
+     .project-card:hover {
+         transform: translateY(-5px);
+     }
+     
+     .project-image {
+         position: relative;
+         height: 250px;
+         overflow: hidden;
+     }
+     
+     .project-image img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         transition: transform 0.3s ease;
+     }
+     
+     .project-image:hover img {
+         transform: scale(1.05);
+     }
+     
+     .image-overlay {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 90%);
+     }
+     
+     .project-content {
+         padding: 1.5rem;
+     }
+     
+     .project-title {
+         font-size: 1.5rem;
+         margin-bottom: 0.75rem;
+         color: #2d3436;
+     }
+     
+     .project-description {
+         color: #636e72;
+         margin-bottom: 1rem;
+         line-height: 1.6;
+     }
+     
+     .tech-stack {
+         display: flex;
+         gap: 0.5rem;
+         flex-wrap: wrap;
+         margin-bottom: 1.5rem;
+     }
+     
+     .tech {
+         background: #e3f2fd;
+         color: #1976d2;
+         padding: 0.3rem 0.8rem;
+         border-radius: 20px;
+         font-size: 0.85rem;
+     }
+     
+     .project-links {
+         display: flex;
+         gap: 1rem;
+         margin-top: 1rem;
+     }
+     
+     .project-link {
+         display: flex;
+         align-items: center;
+         gap: 0.5rem;
+         padding: 0.6rem 1.2rem;
+         background: #1976d2;
+         color: white;
+         border-radius: 5px;
+         text-decoration: none;
+         transition: background 0.3s ease;
+     }
+     
+     .project-link:hover {
+         background: #1565c0;
+     }
+     
+     .project-link img {
+         width: 20px;
+         height: 20px;
+     }
+     
+     @media (max-width: 768px) {
+         .projects-grid {
+             grid-template-columns: 1fr;
+         }
+         
+         .project-image {
+             height: 200px;
+         }
+     }
+     </style>
+
+     <section class="education-section" id="education">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Academic Journey</h2>
+            <p class="section-subtitle">Data Scientist </p>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="timeline">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="degree-info">
+                                <h3>BSc Software Engineering</h3>
+                                <div class="institution">
+                                    <img src="images/university.png" alt="University Logo" class="uni-logo">
+                                    <div>
+                                        <p class="uni-name">University of Sindh</p>
+                                        <p class="uni-location">Jamshoro, Pakistan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="duration">
+                                <i class="fas fa-calendar-alt"></i>
+                                2023 - 2026 (Expected)
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="gpa-badge">
+                                <span class="gpa-text">Current GPA</span>
+                                <span class="gpa-score">2.8/4.0</span>
+                            </div>
+                            <div class="curriculum">
+                                <h4>Relevant Curriculum</h4>
+                                <div class="course-tags">
+                                    <span class="tag">Data Structures & Algorithms</span>
+                                    <span class="tag">Database Systems</span>
+                                    <span class="tag">Machine Learning</span>
+                                    <span class="tag">Big Data Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 (Data Science Focus) -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-card highlight-card">
+                        <div class="card-header">
+                            <h3>Data Science Specialization</h3>
+                            <div class="certification-badge">
+                                <i class="fas fa-certificate"></i>
+                                <span>500+ Training Hours</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="skill-progress">
+                                <div class="skill-info">
+                                    <span>Machine Learning</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="ds-tools">
+                                <div class="tool-card">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="tool-card">
+                                    <i class="fas fa-brain"></i>
+                                    <span>TensorFlow</span>
+                                </div>
+                                <div class="tool-card">
+                                    <i class="fas fa-database"></i>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Achievements -->
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h4>Top 5%</h4>
+                <p>Machine Learning Course Ranking</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <h4>15+ Projects</h4>
+                <p>Completed Data Science Projects</p>
+            </div>
+            
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h4>3 Certifications</h4>
+                <p>Professional Data Science Credentials</p>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="edu-cta">
+         <a href="Resume .pdf" 
+            class="cta-button"
+            download="Resume.pdf">
+            <i class="fas fa-download"></i> Download Academic Portfolio
+         </a>
+     </div>
+     
+     <!-- Font Awesome for the download icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     
+     <style>
+     .cta-button {
+         display: inline-block;
+         padding: 12px 24px;
+         background-color: #2ecc71;
+         color: white;
+         text-decoration: none;
+         border-radius: 5px;
+         transition: background-color 0.3s;
+     }
+     
+     .cta-button:hover {
+         background-color: #27ae60;
+     }
+     
+     .fa-download {
+         margin-right: 8px;
+     }
+     </style>
+    </div>
+</section>
+
+      <!-- Footer Section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="footer-content">
+               <!-- Column 1: Logo & Short Bio -->
+               <div class="footer-column">
+                  <a href="#" class="footer-logo">MyPortfolio</a>
+                  <p class="footer-bio">
+                        Hi, I'm Mohsin Ali, a software engineer transitioning into data science with 2+ years of experience in developing robust software solutions. I specialize in building machine learning models and data pipelines that transform complex datasets into actionable business insights. My engineering background enables me to bridge the gap between statistical analysis and production-grade implementations, ensuring scalable and maintainable data solutions.
+                  </p>
+               </div>
+               <!-- Column 2: Quick Links -->
+               <div class="footer-column">
+                  <h3 class="footer-heading">Quick Links</h3>
+                  <ul class="footer-links">
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#skills">Skills</a></li>
+                     <li><a href="#projects">Projects</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                  </ul>
+               </div>
+               <!-- Column 3: Contact Information -->
+               <div class="footer-column">
+                  <h3 class="footer-heading">Contact Info</h3>
+                  <ul class="footer-contact">
+                     <li><i class="fas fa-envelope"></i> mohsinsahb53@gmail.com</li>
+                     <li><i class="fas fa-phone"></i> +923072908000</li>
+                     <li>
+                        <div class="social-icons-footer">
+                           <a href="https://www.linkedin.com/in/mohsin-ali-528963324/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                           <a href="https://github.com/MohsinAli08000" target="_blank"><i class="fab fa-github"></i></a>
+                           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- Copyright Notice -->
+            <div class="footer-bottom">
+               <p class="copyright">© 2025 Mosin Ali Verse. All Rights Reserved.</p>
+            </div>
+         </div>
+         <!-- Scroll-to-Top Button -->
+         <button id="scroll-to-top" class="scroll-to-top">
+         <i class="fas fa-arrow-up"></i>
+         </button>
+      </footer>
+      <!-- Bootstrap JS -->
+      <script src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
+</html>
